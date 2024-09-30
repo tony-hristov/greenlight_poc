@@ -20,13 +20,19 @@ buildscript {
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
     }
 }
-
 allprojects {
     repositories {
         google()
         mavenCentral()
     }
 }
+
+// rootProject.allprojects {
+//     repositories {
+//         google()
+//         mavenCentral()
+//     }
+// }
 
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
@@ -37,6 +43,7 @@ android {
     }
 
     compileSdk 34
+    // compileSdkVersion 34
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
@@ -54,6 +61,8 @@ android {
 
     defaultConfig {
         minSdkVersion 19
+        // minSdkVersion 28
+        // targetSdkVersion 34
     }
 
     dependencies {
@@ -77,9 +86,17 @@ android {
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation "me.greenlight:partner:2.1.1"
+    // implementation (name: 'partner-2.2.0-release', ext: 'aar')
+    // implementation(files('libs/partner-2.2.0-release.aar'))
+    // implementation 'com.google.dagger:dagger:2.52'
+    // annotationProcessor 'com.google.dagger:dagger-compiler:2.52'
     implementation "androidx.compose.runtime:runtime"
     implementation "androidx.compose.ui:ui"
     implementation "androidx.compose.ui:ui-graphics"
+    // implementation "androidx.appcompat:appcompat:1.7.0"
+    // implementation "androidx.appcompat:appcompat-resources:1.7.0"
+    // implementation "androidx.constraintlayout:constraintlayout:2.1.4"
+    // implementation "com.google.android.material:material:1.2.1"
     implementation "androidx.appcompat:appcompat"
     implementation "androidx.constraintlayout:constraintlayout"
     implementation "androidx.activity:activity"

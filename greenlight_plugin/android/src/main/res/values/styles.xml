@@ -18,4 +18,7 @@
         <item name="android:background">@android:color/white</item>
     </style>
 
+    <!-- <style name="P3" parent="AlkamiGreenlightTheme">
+        <item name="android:background">@android:color/white</item>
+    </style> -->
 </resources>
