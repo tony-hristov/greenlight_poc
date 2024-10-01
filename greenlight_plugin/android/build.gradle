@@ -7,10 +7,10 @@ buildscript {
         google()
         mavenCentral()
         maven {
-            url "https://dl.cloudsmith.io/XXXXXXXXXX/alkami/vendor/maven/"
+            url "https://dl.cloudsmith.io/DisKsZFvs1ikaJJc/alkami/vendor/maven/"
             credentials {
                 username = "USERNAME"
-                password = "PASSWORD"
+                password = "06731e1532f1f25d9371f9b0a8fbcf318819e6db"
             }
         }
     }
